@@ -1,0 +1,22 @@
+<Device Name="default" DID="00">
+  <Resources>
+  </Resources>
+  <DevInfo Name="设备信息">
+    <Vendor Name="制造商">Microduino</Vendor>
+    <Name Name="名称">Microduino</Name>
+    <SerialNumber Name="序列号">0</SerialNumber>
+    <Model Name="型号">0</Model>
+    <Type Name="编号">0</Type>
+    <Power Name="电源">
+      <AC Name="交流供电">220V</AC>
+      <DC Name="直流供电">无</DC>
+    </Power>
+  </DevInfo>
+  <Connections Name="连接信息">
+    <Type Name="连接类型">default</Type>
+    <Port Name="端口号">default</Port>
+    <Node Name="节点编号">default</Node>
+    <Protocol Name="协议">default</Protocol>
+    <Interface Name="接口">default</Interface>
+  </Connections>
+</Device>

@@ -1,0 +1,95 @@
+<UpdateMWEntity Language="zh" Tags="WoT" Name="属性信息">
+  <IDInfo Name="标识信息">
+    <GWName Name="网关名称">OpenWrt网关</GWName>
+    <GWAlias Name="网关别名">microwrt-818_cshi</GWAlias>
+  </IDInfo>
+  <Industry Name="行业信息">WoT</Industry>
+  <StatusInfo Name="OK">
+    <RegStatus Name="OK"/>
+    <LoginStatus Name="OK"/>
+    <DeviceStatus Name="OK"/>
+    <Reachability Name="OK"/>
+  </StatusInfo>
+  <Statistical Name="统计信息">
+    <DeviceCount Name="设备数量">0</DeviceCount>
+    <ResourceCount Name="资源数量">0</ResourceCount>
+    <nVisit Name="访问次数">0</nVisit>
+    <nLogin Name="登陆次数">0</nLogin>
+  </Statistical>
+  <VersionInfo Name="版本信息">
+    <MWVersion Name="中间件版本">0.1</MWVersion>
+    <HWVersion Name="硬件版本">0.1</HWVersion>
+    <FWVersion Name="固件版本">0.1</FWVersion>
+    <SWVersion Name="软件版本">0.1</SWVersion>
+    <OS Name="操作系统">OpenWrt</OS>
+  </VersionInfo>
+  <ManInfo Name="出厂信息">
+    <Vendor Name="制造商">Microduino</Vendor>
+    <SerialNumber Name="序列号">00</SerialNumber>
+    <ObjectName Name="名称">嵌入式网关</ObjectName>
+    <Model Name="型号">rt28xxx</Model>
+    <Type Name="编号">1</Type>
+    <Size Name="尺寸">30mmx20mmx10mm</Size>
+    <Color Name="外观颜色">白色</Color>
+    <Performance Name="性能指标">
+      <CPU Name="CPU">mt7620a</CPU>
+      <Memory Name="内存大小">64M</Memory>
+      <Space Name="存储容量">8M</Space>
+    </Performance>
+    <Power Name="电源">
+      <AC Name="交流供电">220V</AC>
+      <DC Name="直流供电">3.3V</DC>
+    </Power>
+  </ManInfo>
+  <NetInfo Name="网络信息">
+    <LocalIP Name="局域网IP">192.168.13.230</LocalIP>
+    <LocalPort Name="局域网端口号">4000</LocalPort>
+    <PublicIP Name="公网IP">121.42.31.195</PublicIP>
+    <PublicPort Name="公网端口号">9071</PublicPort>
+    <MSISDN Name="手机号">15810531234</MSISDN>
+    <MNO Name="移动运营商">中国移动</MNO>
+  </NetInfo>
+  <DeployInfo Name="部署信息">
+    <Owner Name="所有者">Minelab</Owner>
+    <Location Name="部署位置">中国北京</Location>
+    <Address Name="部署地址">BUPT</Address>
+    <Manager Name="管理员">minelab</Manager>
+    <GPS Name="GPS定位">
+      <Latitude Name="纬度">39.9642254858°N</Latitude>
+      <Longtitude Name="经度">116.3590255380°E</Longtitude>
+      <Altitude Name="海拔高度">1000m</Altitude>
+    </GPS>
+    <LocalCoordinate Name="本地坐标">
+      <LocalX Name="X坐标">0</LocalX>
+      <LocalY Name="Y坐标">0</LocalY>
+      <LocalZ Name="Z坐标">0</LocalZ>
+    </LocalCoordinate>
+  </DeployInfo>
+  <DevicesList>
+    <Device Name="unused" DID="00">
+      <DevInfo Name="设备信息">
+        <Vendor Name="制造商">Microduino</Vendor>
+        <Name Name="名称">default</Name>
+        <SerialNumber Name="序列号">default</SerialNumber>
+        <Model Name="型号">default</Model>
+        <Type Name="编号">default</Type>
+        <Power Name="电源">
+          <AC Name="交流供电">无</AC>
+          <DC Name="直流供电">无</DC>
+        </Power>
+      </DevInfo>
+      <Connections Name="连接信息">
+        <Type Name="连接类型">default</Type>
+        <Port Name="端口号">default</Port>
+        <Node Name="节点编号">default</Node>
+        <Protocol Name="协议">default</Protocol>
+        <Interface Name="接口">default</Interface>
+      </Connections>
+    </Device>
+  </DevicesList>
+  <StatusInfoName>OK</StatusInfoName>
+  <RegStatusName>OK</RegStatusName>
+  <LoginStatusName>OK</LoginStatusName>
+  <DeviceStatusName>OK</DeviceStatusName>
+  <ReabilityName>OK</ReabilityName>
+</UpdateMWEntity>

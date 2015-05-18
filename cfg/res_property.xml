@@ -1,0 +1,5 @@
+<Resource Name="default" ResID="00">
+	<Type Name="sensor">type</Type>
+	<Unit Name="sensorunit">unit</Unit>
+	<Url Name="default">url</Url>
+</Resource>
