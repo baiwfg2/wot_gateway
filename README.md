@@ -18,6 +18,7 @@
 	* mac_dev_map.cfg: hwid与设备号的本地映射表
 	* mac_resID_resPlat_map.cfg:hwid、本地资源ID（我们自己定义的）和平台资源ID的本地映射表
 
+
 * lib/
 	* campra_thread.py:
 	摄像头线程模块,接收来自AllJoyn服务端的图片。数据分成两部分，一部分是图片的二进制流，另一部分是头部。头部信息就指明图片是对应哪个MACADDR上的哪个本地资源
@@ -50,6 +51,7 @@
 
 	* restful.py: GET,POST请求python方法封装
 	
+
 * log/
 	* 日志，目前维护较少
 
