@@ -44,6 +44,7 @@ def  dev_del(mac):
 							g.write(rLine)
 	shutil.move('../cfg/mac_resID_resPlat_map.cfg.tmp', '../cfg/mac_resID_resPlat_map.cfg')
 
+'''
 handler = logging.handlers.RotatingFileHandler('../log/register.log', maxBytes = 1024*1024, backupCount = 5) # 实例化handler   
 fmt = '%(asctime)s - %(filename)s:%(lineno)s - %(name)s - %(message)s'  
     
@@ -53,7 +54,7 @@ handler.setFormatter(formatter)      # 为handler添加formatter
 logger = logging.getLogger('register')		# 获取名为tst的logger  
 logger.addHandler(handler)           		# 为logger添加handler  
 logger.setLevel(logging.DEBUG) 
-
+'''
 
 class Register_Del(threading.Thread):
 	mac_dev_map = {}
@@ -116,7 +117,7 @@ class Register_Del(threading.Thread):
 				readable , writable , exceptional = select.select(inputs, outputs, inputs, timeout)
 				 #When timeout reached , select return three empty lists
 				if not (readable or writable or exceptional):
-					logger.error("Time out ! ")
+					#logger.error("Time out ! ")
 					break
 				for s in readable:
 					if s is server:

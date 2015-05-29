@@ -22,6 +22,7 @@ class HBThread(threading.Thread):
 		while True:
 			print '[HBThread] uploading heartbeat'
 			ret1 = restful.method_get(init.url_hb + '/' + WrtGateway.s_hwid)
+			print ret1
 			content = ret1.split('Content>')[1].split('<')[0]
 
 			if content == '0#1':
