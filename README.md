@@ -2,6 +2,7 @@
 ================
 
 此Python网关中间件工程包含在wot_gateway文件夹内，各文件夹及文件功能简述如下：
+###
 
 * cfg/
 	* dev_property.xml: 设备属性信息（向平台添加设备时用到）
@@ -28,31 +29,29 @@
 	* heartbeat.py: 心跳线程模块，用于定时向平台上传心跳，获取平台上的操作指令。如用微信端控制，则当用微信发送指令时，
 	在心跳的返回信息中就可知道命令已下达。目前包含控制红外摄像机和TV
 
-	init.py: 初使化模块，用以读local.cfg配置文件
+	* init.py: 初使化模块，用以读local.cfg配置文件
 
-	main.cfg: json格式配置文件，包含心跳间隔时间，python接收传感器、图片等端口号
-	main.py：主模块，采用多线程开发。总共五个线程：主线程、网关资源属性注册线程(数据由AllJoyn服务端发送)、
-	心跳线程、传感器数据上传线程(数据由AllJoyn服务端发送)、图像上传线程(数据由AllJoyn服务端发送)
+	* main.cfg: json格式配置文件，包含心跳间隔时间，python接收传感器、图片等端口号
+	* main.py：主模块，采用多线程开发。总共五个线程：主线程、网关资源属性注册线程(数据由AllJoyn服务端发送)、心跳线程、传感器数据上传线程(数据由AllJoyn服务端发送)、图像上传线程(数据由AllJoyn服务端发送)
 
-	register.py: 网关注册线程（由杨平所写），采用多路复用方式获取网关的设备及资源属性信息(json格式，由AllJoyn服务端发送)，
-	同时建立本地映射表。网关注册信息格式如下：
-		Mac_address: 设备硬件ID
-		flags: 0表示有设备进入，需要添加设备及资源；1表示有设备离开，需要注销资源
-		Res_num: 资源数量
-		Res: 资源
-			Res_type: 资源类型
-			Res_name: 资源名称
-			Res_unit: 资源单位
+	* register.py: 网关注册线程（由杨平所写），采用多路复用方式获取网关的设备及资源属性信息(json格式，由AllJoyn服务端发送)，同时建立本地映射表。网关注册信息格式如下：
+	    * Mac_address: 设备硬件ID
+	    * flags: 0表示有设备进入，需要添加设备及资源；1表示有设备离开，需要注销资源
+	    * Res_num: 资源数量
+	    * Res: 资源
+	        * Res_type: 资源类型
+	        * Res_name: 资源名称
+		* Res_unit: 资源单位
 
-	res_data.py: 传感器数据上传线程，接收来自AllJoyn服务端发来的传感器数据，格式封装为json:
-	Mac_addr: 设备硬件ID
-	Res_port: 资源本地编号
-	Res_val: 资源数值
+	* res_data.py: 传感器数据上传线程，接收来自AllJoyn服务端发来的传感器数据，格式封装为json:
+	    * Mac_addr: 设备硬件ID
+	    * Res_port: 资源本地编号
+	    * Res_val: 资源数值
 
-	restful.py: GET,POST请求python方法封装
+	* restful.py: GET,POST请求python方法封装
 	
-log/
-	日志，目前维护较少
+* log/
+	* 日志，目前维护较少
 
 
-维护人邮箱：merryok@163.com(陈) 876621413@qq.com(杨)
+维护人邮箱：<br>merryok@163.com(陈)    876621413@qq.com(杨)
